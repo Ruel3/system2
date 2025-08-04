@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyTrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 StudyTrack</h1>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <input type="date" id="deadline" required />
+      <select id="subject">
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="Literature">Literature</option>
+        <option value="Other">Other</option>
+      </select>
+      <select id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <h2>📝 Your Tasks</h2>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
