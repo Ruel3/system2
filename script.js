@@ -59,6 +59,11 @@ function displayTasks() {
     taskList.appendChild(li);
 
     checkReminder(task);
+    function logout() {
+  localStorage.removeItem('loggedIn');
+  window.location.href = 'login.html';
+}
+
   });
 }
 
